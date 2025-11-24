@@ -1,0 +1,59 @@
+/* Extracted custom styles from index.html */
+body {
+    background-color: #0F111A;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+.neon-text {
+    text-shadow: 0 0 10px rgba(0, 240, 160, 0.6);
+}
+.neon-border {
+    box-shadow: 0 0 15px rgba(0, 240, 160, 0.15);
+}
+.neon-red-border {
+    box-shadow: 0 0 15px rgba(255, 42, 109, 0.15);
+}
+.scan-line {
+    width: 100%;
+    height: 2px;
+    background: #00F0A0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: scan 2s linear infinite;
+    opacity: 0.5;
+    box-shadow: 0 0 10px #00F0A0;
+}
+@keyframes scan {
+    0% { top: 0%; }
+    100% { top: 100%; }
+}
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0F111A; 
+}
+::-webkit-scrollbar-thumb {
+    background: #1F2335; 
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #333; 
+}
+/* Toggle Switch */
+.toggle-checkbox:checked {
+    right: 0;
+    border-color: #00F0A0;
+}
+.toggle-checkbox:checked + .toggle-label {
+    background-color: #00F0A0;
+}
+
+/* Ensure gradient text with background-clip works across browsers */
+.bg-clip-text {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

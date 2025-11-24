@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepfake Detection System</title>
+    
+    <!-- React & ReactDOM -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    
+    <!-- Babel for JSX -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+        <!-- Tailwind Config (external) -->
+        <script src="js/tailwind-config.js"></script>
+        <!-- Tailwind safelist: hidden element with classes used in JSX so CDN can generate them -->
+        <div id="tailwind-safelist" style="display:none"
+            class="bg-bg-main bg-bg-panel bg-bg-lighter text-accent-cyan text-accent-cyan/10 bg-accent-cyan bg-accent-cyan/5 bg-accent-red bg-accent-purple bg-accent-blue from-accent-cyan to-accent-blue bg-gradient-to-r bg-clip-text text-transparent neon-text neon-border neon-red-border border-accent-cyan/20 border-white/5 border-white/10 hover:bg-white/5 hover:text-white text-gray-400 text-white font-mono font-sans rounded-2xl rounded-xl rounded-lg rounded-full animate-pulse animate-spin animate-fade-in blur-[150px] shadow-lg shadow-[0_0_10px_#00F0A0] scale-[1.01] w-[500px] h-[500px] ml-64 p-6 py-1.5 px-4 grid grid-cols-12 col-span-8 col-span-4 col-span-3 gap-6 text-xl text-2xl text-sm text-xs text-[10px] border-dashed border-2">
+        </div>
+        <!-- Tailwind CSS -->
+        <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Chart.js for the Graph -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Firebase SDK -->
+    <script crossorigin src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script crossorigin src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+    <script crossorigin src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+
+    <!-- External styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="root"></div>
+
+    <!-- App scripts -->
+    <script src="js/service.js"></script>
+    <script type="text/babel" src="js/app.jsx"></script>
+</body>
+</html>
